@@ -1,0 +1,229 @@
+.main_section:nth-child(2) {
+    padding-top: 2rem;
+}
+
+.main_section___slides {
+
+    display: flex;
+
+    width: 65%;
+    height: 70%;
+
+    box-shadow: 1px 9px 20px 10px #3357834d;
+}
+
+    .main_section___slides--slide {
+
+        align-items: flex-end;
+        background-color: white;
+
+        overflow: hidden !important;
+        transition: .5s ease-in-out;
+    }
+
+    .main_section___slides--slide {
+
+        height: 100%;
+        width: 70%;
+
+        background: url('../img/molas/bobina.jpg') no-repeat center/cover;
+    }
+
+    .main_section___slides--description {
+
+        padding: 1rem;
+        width: 30%;
+        transition: .5s ease-in-out;
+    }
+
+        .main_section___slides--description h3 {
+
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .main_section___slides--description h4 {
+
+            font-weight: 400;
+            margin-bottom: .5rem;
+        }
+
+        .main_section___slides--description p {
+
+            font-weight: 200;
+        }
+
+    .main_section_areas__slides--slide {
+
+        align-items: flex-end;
+        background-color: white;
+
+        overflow: hidden !important;
+        transition: .5s ease-in-out;
+    }
+
+    .main_section_areas__slides--slide {
+
+        height: 100%;
+        width: 70%;
+
+        background: url('../img/areas/hospitalar.jpg') no-repeat center/cover;
+    }
+
+    .main_section_areas__slides--description {
+
+        padding: 1rem;
+        width: 30%;
+        transition: .5s ease-in-out;
+    }
+
+        .main_section_areas__slides--description h3 {
+
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .main_section_areas__slides--description h4 {
+
+            font-weight: 400;
+            margin-bottom: .5rem;
+        }
+
+        .main_section_areas__slides--description p {
+
+            font-weight: 200;
+        }
+
+.main_section___nav {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 15%;
+    height: auto;
+
+    border-left: .2rem solid #335783;
+}
+
+    .main_section___nav a {
+        justify-content: flex-start;
+        
+        background-color: white;
+        width: 100%;
+        height: 4rem;
+        
+        color: var(--default-blue);
+        
+        padding-left: 1rem;
+    }
+    
+    .main_section___nav a:hover {
+        text-align: center;
+        border-left: .5rem solid var(--default-blue);
+        background-color: var(--default-blue-background);
+        /*box-shadow: 1px 9px 20px 10px #3357832c;*/
+        /* transition: .5s ease-in-out; */
+    }
+
+    .main_section___nav a.checked {
+        transition: .5s ease-in-out !important;
+        text-align: center;
+        border-left: .5rem solid #335783;
+        background-color: #3357831f;
+        /*box-shadow: 1px 9px 20px 10px #3357832c;*/
+    }
+
+footer {
+    margin-top: -6.5rem;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .main_section {
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+        justify-content: space-evenly;
+    
+        color: #335783;
+        font-size: 1.4rem;
+
+        margin: 0 auto;
+    
+        width: 90%;
+        height: 40rem;
+    }
+
+        .main_section___slides {
+
+            display: flex;
+            flex-direction: column;
+        
+            width: 100%;
+        
+            box-shadow: 1px 9px 20px 10px #3357834d;
+
+            overflow: hidden;
+
+            margin-top: -20rem;
+            /* margin-bottom: -50rem; */
+        }
+        
+            .main_section___slides--slide {
+        
+                height: 90%;
+                width: 100%;
+        
+                background: url('../img/molas/bobina.jpg') no-repeat center/cover;
+
+                /* margin-bottom: -20rem; */
+            }
+        
+            .main_section___slides--description {
+        
+                padding: 1rem;
+                width: 100%;
+                height: 100%;
+                transition: .5s ease-in-out;
+
+                box-sizing: border-box;
+            }
+
+                .main_section___slides--description p {
+            
+                    font-weight: 100;
+                }
+
+
+            .main_section_areas__slides--slide {
+    
+                height: 90%;
+                width: 100%;
+        
+                background: url('../img/areas/hospitalar.jpg') no-repeat center/cover;
+            }
+        
+            .main_section_areas__slides--description {
+        
+                padding: 1rem;
+                width: 100%;
+                height: 100%;
+                transition: .5s ease-in-out;
+
+                box-sizing: border-box;
+            }
+
+                .main_section_areas__slides--description p {
+            
+                    font-weight: 100;
+                }
+
+        .main_section___nav {
+
+            display: none;
+        }
+        
+}

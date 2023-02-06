@@ -1,0 +1,42 @@
+.main_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.main_section__video {
+    width: 45%;
+    padding-left: 1rem;
+    margin-bottom: 4rem;
+}
+
+.main_section__video img {
+    width: 100%;
+    height: auto;
+}
+
+.main_section__video li {
+    padding: 1rem;
+}
+
+.main_section__video li:hover {
+    background-color: #3357831f;
+    border-left: .5rem solid #335783;
+}
+
+@media screen and (max-width: 480px) { 
+
+    .main_section {
+        margin-top: -4rem;
+        flex-direction: column;
+    }
+
+    .main_section__video {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 4rem;
+    }
+}

@@ -1,0 +1,117 @@
+.main_section {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+}
+
+.main_section__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between  ;
+
+    width: 100%;
+    height: auto;
+}
+
+    .main_section__catalog--card {
+        padding: 1rem;
+        width: 30%;
+        height: 40rem;
+        /* box-shadow: 1px 9px 20px 10px #3357834d; */
+
+        margin-bottom: 3rem;
+        transition: .5s ease-in-out;
+        /* border: 2px solid #335783; */
+    }
+
+    .main_section__catalog--card:hover {
+        margin-top: -1rem;
+        box-shadow: 1px 9px 20px 10px #3357834d;
+    }
+
+        .card_header {
+            width: 100%;
+            height: 40%;
+            margin-bottom: 1rem;
+        }
+
+        .main_section__catalog--card:nth-child(1) .card_header {
+            background: url('../img/molas/molas_tracao.jpg') no-repeat center/cover;
+        }
+
+        .main_section__catalog--card:nth-child(2) .card_header {
+            background: url('../img/molas/molas_torcao.jpg') no-repeat center/cover;
+        }
+
+        .main_section__catalog--card:nth-child(3) .card_header {
+            background: url('../img/molas/slide-3.jpg') no-repeat center/cover;
+        }
+
+        .main_section__catalog--card:nth-child(4) .card_header {
+            background: url('../img/molas/molas_especiais_antenas.jpg') no-repeat center/cover;
+        }
+
+        .main_section__catalog--card:nth-child(5) .card_header {
+            background: url('../img/molas/bobina.jpg') no-repeat center/cover;
+        }
+
+        .main_section__catalog--card:nth-child(6) .card_header {
+            background: url('../img/molas/estampas_convencionais.jpg') no-repeat center/cover;
+        }
+
+        .main_section__catalog--card:nth-child(7) .card_header {
+            background: url('../img/molas/aramados.jpg') no-repeat center/cover;
+        }
+
+        .main_section__catalog--card:nth-child(8) .card_header {
+            background: url('../img/molas/molas_espiral.jpg') no-repeat center/cover;
+        }
+
+        .main_section__catalog--card:nth-child(9) .card_header {
+            background: url('../img/molas/mola_onda.jpg') no-repeat center/cover;
+        }
+
+            .card_content p {
+                text-align: justify;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+
+@media screen and (max-width: 480px) { 
+
+    .main_section {
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+    }
+
+    .main_section__catalog {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: -3rem;
+
+        box-sizing: content-box;
+    }
+
+        .main_section__catalog--card {
+            padding: 1rem;
+            width: 90%;
+            height: auto;
+            /* box-shadow: 1px 9px 20px 10px #3357834d; */
+
+            margin-bottom: 2rem;
+            transition: .5s ease-in-out;
+            /* border: 2px solid #335783; */
+        }
+
+        .card_header {
+            width: 100%;
+            height: 10rem;
+            margin-bottom: 1rem;
+        }
+
+        .card_content {
+            height: auto;
+        }
+}
